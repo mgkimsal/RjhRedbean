@@ -1,0 +1,13 @@
+{
+    "name": "richardjh/RjhRedbean",
+    "description": "A ZF2 module to provide RedbeanPHP ORM",
+    "keywords": [
+        "redbean",
+        "zf2"
+    ],
+    "homepage": "https://github.com/richardjh/RjhRedbean",
+    "require": {
+        "php": ">=5.2.0",
+        "gabordemooij/redbean": "dev-master"
+    }
+}
