@@ -11,9 +11,10 @@ class Module
 
     public function getAutoloaderConfig()
     {
-        include __DIR__ . '/vendor/autoload.php';
-
         return array(
+			'Zend\Loader\ClassMapAutoloader' => array(
+				include __DIR__ . '/autoload_classmap.php',
+			),
             'Zend\Loader\StandardAutoloader' => array(
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
