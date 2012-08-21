@@ -1,4 +1,10 @@
 <?php
+/**
+ * RjhRedbean ZF2 Module
+ *
+ * @link      https://github.com/richardjh/RjhRedbean
+ * @author    Richard Holloway <richard@richardjh.org>
+ */
 
 namespace RjhRedbean\Service;
 
@@ -12,10 +18,11 @@ class RjhRedbeanFactory implements FactoryInterface
     public function createService( ServiceLocatorInterface $serviceLocator )
     {
         $rjhRedbean = new RjhRedbean();
+
         $config = $serviceLocator->get('config');
         $redbean = $config['redbean'];
-        $connection = $redbean['connection'];
 
+        $connection = $redbean['connection'];
         $dsn = $connection['dsn'];
         $user = $connection['user'];
         $password = $connection['password'];
