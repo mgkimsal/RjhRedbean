@@ -12,4 +12,5 @@ use \R;
 
 class RjhRedbean extends R
 {
+
 }
