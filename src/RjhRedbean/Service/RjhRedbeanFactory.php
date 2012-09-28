@@ -18,7 +18,6 @@ class RjhRedbeanFactory implements FactoryInterface
     public function createService( ServiceLocatorInterface $serviceLocator )
     {
         $rjhRedbean = new RjhRedbean();
-		// @todo: validate the configuration and throw exception if bad
 
         $config = $serviceLocator->get('config');
         $redbean = $config['redbean'];
