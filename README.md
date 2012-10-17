@@ -120,7 +120,7 @@ As an example, here is a Service factory to inject RjhRedbean into a service cal
 
 And the setter code in the Service would look like:
 
-	public function setRedbeanService(RjhRedbean $redbeanService)
+	public function setRedbeanService(RjhRedbean\Service\RjhRedbean $redbeanService)
 	{
 		$this->redbeanService = $redbeanService;
 	}
