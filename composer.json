@@ -1,5 +1,5 @@
 {
-    "name": "richardjh/RjhRedbean",
+    "name": "richardjh/rjhredbean",
     "description": "A ZF2 module to provide RedbeanPHP ORM",
     "keywords": [
         "redbean",
