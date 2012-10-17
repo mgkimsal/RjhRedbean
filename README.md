@@ -96,5 +96,49 @@ and edit the new file with your database settings.
 USING RjhRedbean IN YOUR APPLICATION
 ------------------------------------
 
+You access the configured instance of RedbeanPHP ORM using the service locator. The key name is RjhRedbean.
+
+As an example, here is a Service factory to inject RjhRedbean into a service called PageService:
+
+	<?php
+
+	namespace Yournamespace\Service;
+
+	use Zend\ServiceManager\FactoryInterface,
+	Zend\ServiceManager\ServiceLocatorInterface;
+
+	class PageServiceFactory implements FactoryInterface
+	{
+		public function createService(ServiceLocatorInterface $serviceLocator)
+		{
+			$pageService = new PageService;
+			$pageService->setRedbeanService($serviceLocator->get('RjhRedbean'));
+
+			return $pageService;
+		}
+	}
+
+And the setter code in the Service would look like:
+
+	public function setRedbeanService(RjhRedbean $redbeanService)
+	{
+		$this->redbeanService = $redbeanService;
+	}
+
+Then you could have a method to get a page based on the slug, for example:
+
+	public function getPage($slug, $type = 'default')
+	{
+		$page = $this->redbeanService->findAll(
+			'page'
+			' slug = :slug AND type = :type ',
+			array(
+				':slug' => $slug,
+				':type' => $type
+			)
+		);
+
+		return $page;	
+	}
 
 
