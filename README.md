@@ -6,10 +6,9 @@ A ZF2 module to integrate RedbeanPHP ORM into a ZF2 application
 INSTALLATION
 ------------
 
-RjhRedbean is not available in packagist just yet. I will work on that shortly. 
-For now you have to add the git repository to your composer configuration in order to install RjhRedbean.
+RjhRedbean is now available in packagist as richardjh/rjhredbean.
 
-Edit your main /composer.json file to look like this:
+Edit your main composer.json file to look like this:
 
 	{
 		"name": "zendframework/skeleton-application",
@@ -20,17 +19,11 @@ Edit your main /composer.json file to look like this:
 			"zf2"
 		],
 		"homepage": "http://framework.zend.com/",
-		"repositories": [
-		{
-			"type":"vcs",
-			"url":"https://github.com/richardjh/RjhRedbean.git"
-		}
-		],
 		"require": {
 			"php": ">=5.3.3",
 			"zendframework/zendframework": "2.*",
 			"gabordemooij/redbean": "dev-master",
-			"richardjh/RjhRedbean": "dev-master"
+			"richardjh/rjhredbean": "dev-master"
 		}
 	}
 
@@ -53,7 +46,7 @@ Assumming all went well, your vendor directory should now look like:
 			redbean/
 		README.md
 		richardjh/
-			RjhRedbean/
+			rjhredbean/
 		zendframework/
 			zendframework/
 		ZF2/
@@ -66,7 +59,7 @@ Edit your config/application.php file to look like:
 	return array(
 		'modules' => array(
 			'Application',
-			'RjhRedbean',
+			'rjhredbean',
 		),
 		'module_listener_options' => array(
 			'config_glob_paths'    => array(
@@ -88,9 +81,9 @@ CONFIGURING RjhRedbean
 You need to set up your database connection settings. 
 
 Copy 
-	vendor/richardjh/RjhRedbean/config/local.php.dist 
+	vendor/richardjh/rjhredbean/config/local.php.dist 
 to 
-	vendor/richardjh/RjhRedbean/config/local.php 
+	vendor/richardjh/rjhredbean/config/local.php 
 and edit the new file with your database settings.
 
 USING RjhRedbean IN YOUR APPLICATION
