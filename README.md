@@ -44,44 +44,44 @@ Now run
 
 Assumming all went well, your vendor directory should now look like:
 
-vendor/
-	autoload.php
-	composer/
-		autoload_classmap.php
-		autoload_namespaces.php
-		autoload_real.php
-		ClassLoader.php
-		installed.json
-	gabordemooij/
-		redbean/
-	README.md
-	richardjh/
-		RjhRedbean/
-	zendframework/
+	vendor/
+		autoload.php
+		composer/
+			autoload_classmap.php
+			autoload_namespaces.php
+			autoload_real.php
+			ClassLoader.php
+			installed.json
+		gabordemooij/
+			redbean/
+		README.md
+		richardjh/
+			RjhRedbean/
 		zendframework/
-	ZF2/
+			zendframework/
+		ZF2/
 
 You now need to enable the RjhRedbean module in your application. Note that RedbeanPHP ORM is not itself a ZF2 module and does not need to be enabled.
 
 Edit your config/application.php file to look like:
 
-<?php
-return array(
-    'modules' => array(
-        'Application',
-        'RjhRedbean',
-    ),
-    'module_listener_options' => array(
-        'config_glob_paths'    => array(
-            'config/autoload/{,*.}{global,local}.php',
-        ),
-        'module_paths' => array(
-            './module',
-            './vendor',
-            './vendor/richardjh',
-        ),
-    ),
-); 
+	<?php
+	return array(
+		'modules' => array(
+			'Application',
+			'RjhRedbean',
+		),
+		'module_listener_options' => array(
+			'config_glob_paths'    => array(
+				'config/autoload/{,*.}{global,local}.php',
+			),
+			'module_paths' => array(
+				'./module',
+				'./vendor',
+				'./vendor/richardjh',
+			),
+		),
+	); 
 
 Now test your application still runs at this point. If there are any problems, please let me know.
 
