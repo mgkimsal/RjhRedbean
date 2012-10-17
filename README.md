@@ -45,23 +45,23 @@ Now run
 Assumming all went well, your vendor directory should now look like:
 
 vendor/
-├── autoload.php
-├── composer
-│   ├── autoload_classmap.php
-│   ├── autoload_namespaces.php
-│   ├── autoload_real.php
-│   ├── ClassLoader.php
-│   └── installed.json
-├── gabordemooij
-│   └── redbean
-├── README.md
-├── richardjh
-│   └── RjhRedbean
-├── zendframework
-│   └── zendframework
-└── ZF2
+	autoload.php
+	composer/
+		autoload_classmap.php
+		autoload_namespaces.php
+		autoload_real.php
+		ClassLoader.php
+		installed.json
+	gabordemooij/
+		redbean/
+	README.md
+	richardjh/
+		RjhRedbean/
+	zendframework/
+		zendframework/
+	ZF2/
 
-You now need to enable the RjhRedbean module in your application. Note that RedbeanPHP ORM is not itsefl a ZF2 module and does not need to be enabled.
+You now need to enable the RjhRedbean module in your application. Note that RedbeanPHP ORM is not itself a ZF2 module and does not need to be enabled.
 
 Edit your config/application.php file to look like:
 
