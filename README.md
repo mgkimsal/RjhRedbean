@@ -129,7 +129,7 @@ Then you could have a method to get a page based on the slug, for example:
 
 	public function getPage($slug, $type = 'default')
 	{
-		$page = $this->redbeanService->findAll(
+		$page = $this->redbeanService->findOne(
 			'page'
 			' slug = :slug AND type = :type ',
 			array(
