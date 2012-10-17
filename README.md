@@ -81,10 +81,14 @@ CONFIGURING RjhRedbean
 You need to set up your database connection settings. 
 
 Copy 
+
 	vendor/richardjh/rjhredbean/config/local.php.dist 
+
 to 
-	vendor/richardjh/rjhredbean/config/local.php 
-and edit the new file with your database settings.
+
+	config/autoload/redbean.local.php 
+	
+and edit the new redbean.local.php file with your database settings.
 
 USING RjhRedbean IN YOUR APPLICATION
 ------------------------------------
