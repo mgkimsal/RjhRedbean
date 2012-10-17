@@ -133,5 +133,7 @@ Then you could have a method to get a page based on the slug, for example:
 
 		return $page;	
 	}
+	
+*Please report problems to richard@richardjh.org*
 
 
