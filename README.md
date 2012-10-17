@@ -6,9 +6,6 @@ A ZF2 module to integrate RedbeanPHP ORM into a ZF2 application
 INSTALLATION
 ------------
 
-Using composer
---------------
-
 RjhRedbean is not available in packagist just yet. I will work on that shortly. 
 For now you have to add the git repository to your composer configuration in order to install RjhRedbean.
 
@@ -26,7 +23,7 @@ Edit your main /composer.json file to look like this:
 		"repositories": [
 		{
 			"type":"vcs",
-			"url":"https://github.com/richardjh/RjhRedbean"
+			"url":"https://github.com/richardjh/RjhRedbean.git"
 		}
 		],
 		"require": {
