@@ -3,6 +3,9 @@ RjhRedbean
 
 A ZF2 module to integrate RedbeanPHP ORM into a ZF2 application
 
+Currently RjhRedbean does not support [Fuse](http://redbeanphp.com/community/wiki/index.php/Fuse).
+
+
 INSTALLATION
 ------------
 
