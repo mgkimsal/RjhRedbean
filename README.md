@@ -3,14 +3,14 @@ RjhRedbean
 
 A ZF2 module to integrate RedbeanPHP ORM into a ZF2 application
 
-Currently RjhRedbean does not support [Fuse](http://redbeanphp.com/community/wiki/index.php/Fuse). 
-I will hopefully get it working soon but if you can help, please do.
+RjhRedbean now supports [Fuse](http://redbeanphp.com/community/wiki/index.php/Fuse). 
+Please see my blog post on [how to use FUSE models in RjhRedbean](http://richardjh.org/blog/how-to-use-fuse-models-in-rjhredbean)
 
 
 INSTALLATION
 ------------
 
-RjhRedbean is now available in packagist as richardjh/rjhredbean.
+RjhRedbean is available in packagist as richardjh/rjhredbean.
 
 Edit your main composer.json file to look like this:
 
@@ -66,7 +66,7 @@ Edit your config/application.php file to look like:
 			'rjhredbean',
 		),
 		'module_listener_options' => array(
-			'config_glob_paths'    => array(
+			'config_glob_paths'	=> array(
 				'config/autoload/{,*.}{global,local}.php',
 			),
 			'module_paths' => array(
@@ -141,7 +141,7 @@ Then you could have a method to get a page based on the slug, for example:
 
 		return $page;	
 	}
-	
+
 *Please report problems to richard@richardjh.org*
 
 
