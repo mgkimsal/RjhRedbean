@@ -15,5 +15,6 @@ return array(
 			'password' => '', 	/* eg 'J2Uuy6f78syhjhP'	*/
 		),
 		'freeze' => false,
+		'debug' => false,
 	),
 );

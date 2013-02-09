@@ -28,6 +28,7 @@ class RjhRedbeanFactory implements FactoryInterface
         $password = $connection['password'];
         $rjhRedbean->setup($dsn, $user, $password);
         $rjhRedbean->freeze($redbean['freeze']);
+        $rjhRedbean->debug($redbean['debug']);
 
         return $rjhRedbean;
     }
