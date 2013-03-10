@@ -1,18 +1,12 @@
 <?php
-/**
- * RjhRedbean ZF2 Module
- *
- * @link	  https://github.com/richardjh/RjhRedbean
- * @author	Richard Holloway <richard@richardjh.org>
- */
 
 return array(
 	/* See http://www.redbeanphp.com/manual/compatible for options */
 	'redbean' => array(
 		'connection' => array(
-			'dsn' => '', 		/* eg 'mysql:host=localhost;dbname=rjh' */
-			'user' => '', 		/* eg 'richardjh' */
-			'password' => '', 	/* eg 'J2Uuy6f78syhjhP'	*/
+			'dsn' => '',
+			'user' => '',
+			'password' => '',
 		),
 		'freeze' => false,
 		'debug' => false,
