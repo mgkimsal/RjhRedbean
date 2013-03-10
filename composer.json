@@ -1,0 +1,8 @@
+{
+    "name": "redbean",
+    "description": "Load and configure RedbeanPHP ORM",
+    "require": {
+        "php": ">=5.2.0",
+        "gabordemooij/redbean": "dev-master"
+    }
+}

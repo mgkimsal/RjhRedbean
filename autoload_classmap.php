@@ -1,0 +1,55 @@
+<?php
+
+$redbeanIncFile = __DIR__ . '/../gabordemooij/redbean/RedBean/redbean.inc.php';
+
+if (!is_file($redbeanIncFile)) {
+	throw new Exception('Cannot find Redbean include file');
+}
+
+return array(
+    'RedBean_DuplicationManager'                       => $redbeanIncFile,
+    'Redbean_SimpleModel'                              => $redbeanIncFile,
+    'RedBean_Setup'                                    => $redbeanIncFile,
+    'RedBean_Adapter'                                  => $redbeanIncFile,
+    'RedBean_Observable'                               => $redbeanIncFile,
+    'RedBean_DependencyInjector'                       => $redbeanIncFile,
+    'RedBean_Exception'                                => $redbeanIncFile,
+    'RedBean_IModelFormatter'                          => $redbeanIncFile,
+    'R'                                                => $redbeanIncFile,
+    'RedBean_QueryWriter_MySQL'                        => $redbeanIncFile,
+    'RedBean_QueryWriter_AQueryWriter'                 => $redbeanIncFile,
+    'RedBean_QueryWriter_Oracle'                       => $redbeanIncFile,
+    'RedBean_QueryWriter_CUBRID'                       => $redbeanIncFile,
+    'RedBean_QueryWriter_PostgreSQL'                   => $redbeanIncFile,
+    'RedBean_QueryWriter_SQLiteT'                      => $redbeanIncFile,
+    'RedBean_Plugin_Cache'                             => $redbeanIncFile,
+    'RedBean_Plugin_BeanCan'                           => $redbeanIncFile,
+    'RedBean_Plugin_QueryLogger'                       => $redbeanIncFile,
+    'RedBean_Plugin_TimeLine'                          => $redbeanIncFile,
+    'RedBean_Plugin_Sync'                              => $redbeanIncFile,
+    'RedBean_Plugin_BeanExport'                        => $redbeanIncFile,
+    'RedBean_Plugin_Cooker'                            => $redbeanIncFile,
+    'RedBean_AssociationManager_ExtAssociationManager' => $redbeanIncFile,
+    'RedBean_Exception_Security'                       => $redbeanIncFile,
+    'RedBean_Exception_SQL'                            => $redbeanIncFile,
+    'RedBean_Exception_OCI'                            => $redbeanIncFile,
+    'RedBean_BeanHelper'                               => $redbeanIncFile,
+    'RedBean_Driver'                                   => $redbeanIncFile,
+    'RedBean_Plugin'                                   => $redbeanIncFile,
+    'RedBean_Observer'                                 => $redbeanIncFile,
+    'RedBean_Facade'                                   => $redbeanIncFile,
+    'RedBean_Logger_Default'                           => $redbeanIncFile,
+    'RedBean_SQLHelper'                                => $redbeanIncFile,
+    'RedBean_ToolBox'                                  => $redbeanIncFile,
+    'RedBean_Adapter_DBAdapter'                        => $redbeanIncFile,
+    'RedBean_Logger'                                   => $redbeanIncFile,
+    'RedBean_OODBBean'                                 => $redbeanIncFile,
+    'RedBean_BeanHelper_Facade'                        => $redbeanIncFile,
+    'RedBean_ModelHelper'                              => $redbeanIncFile,
+    'RedBean_Driver_PDO'                               => $redbeanIncFile,
+    'RedBean_Driver_OCI'                               => $redbeanIncFile,
+    'RedBean_AssociationManager'                       => $redbeanIncFile,
+    'RedBean_OODB'                                     => $redbeanIncFile,
+    'RedBean_TagManager'                               => $redbeanIncFile,
+    'RedBean_QueryWriter'                              => $redbeanIncFile,
+);
