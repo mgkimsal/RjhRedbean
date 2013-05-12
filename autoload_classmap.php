@@ -3,7 +3,7 @@
 $redbeanIncFile = __DIR__ . '/../gabordemooij/redbean/RedBean/redbean.inc.php';
 
 if (!is_file($redbeanIncFile)) {
-	throw new Exception('Cannot find Redbean include file');
+    throw new Exception('Cannot find Redbean include file');
 }
 
 return array(

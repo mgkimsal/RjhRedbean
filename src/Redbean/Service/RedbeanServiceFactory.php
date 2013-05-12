@@ -2,9 +2,9 @@
 
 namespace Redbean\Service;
 
-use Zend\ServiceManager\FactoryInterface,
-    Zend\ServiceManager\ServiceLocatorInterface,
-    R;
+use Zend\ServiceManager\FactoryInterface;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use R;
 
 class RedbeanServiceFactory implements FactoryInterface
 {
