@@ -1,5 +1,5 @@
 {
-    "name": "redbean",
+    "name": "richardjh/redbean",
     "description": "Load and configure RedbeanPHP ORM",
     "require": {
         "php": ">=5.2.0",
