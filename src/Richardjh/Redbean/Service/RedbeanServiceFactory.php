@@ -1,6 +1,6 @@
 <?php
 
-namespace Redbean\Service;
+namespace Richardjh\Redbean\Service;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;

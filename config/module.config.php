@@ -3,7 +3,7 @@
 return array(
     'service_manager' => array(
         'factories' => array(
-            'Redbean' => 'Redbean\Service\RedbeanServiceFactory',
+            'Redbean' => 'Richardjh\Redbean\Service\RedbeanServiceFactory',
         ),
     ),
 );
