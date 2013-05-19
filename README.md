@@ -1,7 +1,7 @@
 Redbean
 =======
 
-Load and configure RedbeanPHP ORM.
+RedbeanPHP ORM module
 
 Install
 -------

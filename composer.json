@@ -1,8 +1,18 @@
 {
     "name": "richardjh/redbean",
-    "description": "Load and configure RedbeanPHP ORM",
+    "description": "RedbeanPHP ORM module",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.2.0",
         "gabordemooij/redbean": "dev-master"
-    }
+    },
+    "require-dev": {
+        "richardjh/build-tools": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:richardjh/build-tools.git"
+        }
+    ]
 }
