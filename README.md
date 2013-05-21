@@ -1,7 +1,7 @@
-Redbean
-=======
+RjhRedbean
+==========
 
-RedbeanPHP ORM module
+RedbeanPHP ORM module for Zend Framework 2
 
 Install
 -------
@@ -9,20 +9,13 @@ Install
 Install using composer, for example
 
     {
-        "name": "richardjh-site",
-        "description": "Richardjh Website",
-        "minimum-stability": "dev",
+        "name": "application",
+        "description": "My Application",
         "require": {
             "php": ">=5.3.3",
             "zendframework/zendframework": "2.1.*",
-            "richardjh/redbean": "dev-master"
-        },
-        "repositories": [
-            {
-                "type": "vcs",
-                "url": "git@bitbucket.org:richardjh/redbean.git"
-            }
-        ]
+            "richardjh/rjhredbean": "dev-master"
+        }
     }
 
 And enable in config/application config, for example
@@ -32,7 +25,7 @@ And enable in config/application config, for example
     return array(
         'modules' => array(
             'Application',
-            'richardjh\redbean',
+            'richardjh\rjhredbean',
         ),
         'module_listener_options' => array(
             'module_paths' => array(
@@ -47,5 +40,5 @@ And enable in config/application config, for example
 
 Configure
 ---------
-Copy vendor/richardjh/redbean/config/autoload/local.php.dist to config/autoload/redbean.local.php and enter the database settings. 
+Copy vendor/richardjh/rjhredbean/config/autoload/local.php.dist to config/autoload/rjhredbean.local.php and enter the database settings.
 You can find more information about this at http://www.redbeanphp.com/manual/compatible

@@ -2,7 +2,7 @@
 
 return array(
     /* See http://www.redbeanphp.com/manual/compatible for options */
-    'redbean' => array(
+    'rjhredbean' => array(
         'connection' => array(
             'dsn' => '',
             'user' => '',

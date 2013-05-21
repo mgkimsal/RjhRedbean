@@ -1,18 +1,8 @@
 {
-    "name": "richardjh/redbean",
-    "description": "RedbeanPHP ORM module",
-    "minimum-stability": "dev",
+    "name": "richardjh/rjhredbean",
+    "description": "RedbeanPHP ORM module for ZF2",
     "require": {
         "php": ">=5.2.0",
         "gabordemooij/redbean": "dev-master"
-    },
-    "require-dev": {
-        "richardjh/build-tools": "dev-master"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:richardjh/build-tools.git"
-        }
-    ]
+    }
 }
