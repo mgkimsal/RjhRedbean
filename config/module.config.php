@@ -6,7 +6,7 @@ return array(
             'RjhRedbean' => 'Richardjh\RjhRedbean\Service\RjhRedbeanServiceFactory',
         ),
         'initializers' => array(
-            'Richardjh\RjhRedbean\Initializer\RedbeanAwareInitializer' => 'Richardjh\RjhRedbean\Initializer\RedbeanAwareInitializer',
+            'RedbeanAwareInitializer' => 'Richardjh\RjhRedbean\Initializer\RedbeanAwareInitializer',
         ),
     ),
 );
