@@ -2,10 +2,6 @@
 
 $redbeanIncFile = __DIR__ . '/../../gabordemooij/redbean/RedBean/redbean.inc.php';
 
-if (!is_file($redbeanIncFile)) {
-	throw new Exception('Cannot find Redbean Include File');
-}
-
 return array(
     'RedBean_DuplicationManager'                       => $redbeanIncFile,
     'Redbean_SimpleModel'                              => $redbeanIncFile,

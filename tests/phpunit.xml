@@ -1,0 +1,7 @@
+<phpunit backupGlobals="false" colors="false">
+    <testsuites>
+        <testsuite name="RjhRedbean Test Suite">
+            <directory>testsuite/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
